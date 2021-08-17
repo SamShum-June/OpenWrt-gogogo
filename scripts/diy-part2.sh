@@ -34,6 +34,9 @@ pushd package/community
 git clone --depth=1 https://github.com/kenzok8/openwrt-package
 rm -rf ../lean/luci-app-kodexplorer
 
+# Add kenzok8 small
+git clone --depth=1 https://github.com/kenzok8/small
+
 # Add immortalwrt's Packages
 git clone --depth=1 -b openwrt-21.02 https://github.com/immortalwrt/packages
 git clone --depth=1 -b openwrt-21.02 https://github.com/immortalwrt/luci
