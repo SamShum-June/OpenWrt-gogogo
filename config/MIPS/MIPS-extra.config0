@@ -1,3 +1,5 @@
+#添加#
+
 CONFIG_KERNEL_MIPS_FPU_EMULATOR=y
 
 
