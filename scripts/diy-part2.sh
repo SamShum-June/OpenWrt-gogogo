@@ -38,8 +38,8 @@ rm -rf ../lean/luci-app-kodexplorer
 git clone --depth=1 https://github.com/kenzok8/small
 
 # Add immortalwrt's Packages
-git clone --depth=1 -b openwrt-21.02 https://github.com/immortalwrt/packages/tree/openwrt-21.02
-git clone --depth=1 -b openwrt-21.02 https://github.com/immortalwrt/luci/tree/openwrt-21.02
+git clone --depth=1 -b openwrt-21.02 https://github.com/immortalwrt/packages
+git clone --depth=1 -b openwrt-21.02 https://github.com/immortalwrt/luci
 cp -r ../luci/applications/luci-app-adguardhome ../package/lean//luci-app-adguardhome
 
 # Add luci-app-passwall
