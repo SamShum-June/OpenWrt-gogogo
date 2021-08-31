@@ -25,5 +25,5 @@ sed -i '$a src-git diy https://github.com/CCnut/feed-netkeeper.git;LUCI-LUA-UCIT
 #rm -rf ../lean/luci-theme-argon
 
 # Svn checkout packages from immortalwrt's repository
-git clone --depth=1 https://github.com/immortalwrt/packages/tree/openwrt-21.02 -b openwrt-21.02 packages
-git clone --depth=1 https://github.com/immortalwrt/luci/tree/openwrt-21.02 -b openwrt-21.02 luci
+git clone --depth=1 https://github.com/immortalwrt/packages -b openwrt-21.02 packages
+git clone --depth=1 https://github.com/immortalwrt/luci -b openwrt-21.02 luci
