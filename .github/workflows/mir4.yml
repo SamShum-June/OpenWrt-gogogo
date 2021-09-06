@@ -20,7 +20,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://git.openwrt.org/feed/packages.git
+  REPO_URL: https://git.openwrt.org/feed/packages
   #REPO_URL: https://github.com/openwrt/openwrt
   REPO_BRANCH: openwrt-21.02
   #REPO_URL: https://github.com/coolsnowwolf/lede
