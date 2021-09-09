@@ -8,7 +8,8 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build mi router 4 OpenWrt MIPS COM
+#Build mi router 4 OpenWrt MIPS COM
+name: Build mir 4 OpenWrt COM
 
 on:
   repository_dispatch:
