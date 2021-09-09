@@ -8,7 +8,8 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build mi router 4 OpenWrt Coolsnowwolf
+#Build mi router 4 OpenWrt Coolsnowwolf
+name: Build mir 4 OpenWrt Cools
 
 on:
   repository_dispatch:
