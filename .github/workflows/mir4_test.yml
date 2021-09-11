@@ -9,8 +9,7 @@
 #
 
 #Build mi router 4 OpenWrt MIPS COM
-name: Build mir 4 OpenWrt COM
-
+name: Build mir 4 test
 on:
   repository_dispatch:
   workflow_dispatch:
