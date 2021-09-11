@@ -10,6 +10,7 @@
 
 #Build mi router 4 OpenWrt MIPS COM
 name: Build mir 4 test
+
 on:
   repository_dispatch:
   workflow_dispatch:
@@ -17,7 +18,7 @@ on:
       ssh:
         description: 'SSH connection to Actions'
         required: false
-        default: 'true'
+        default: 'false'
 
 env:
   REPO_URL: https://github.com/openwrt/openwrt
@@ -78,7 +79,7 @@ jobs:
         cd openwrt && ./scripts/feeds install -a
 
     - name: Download package 1
-      id: package
+      id: package1
       run: |
         cd openwrt
         make defconfig
@@ -87,7 +88,7 @@ jobs:
         find dl -size -1024c -exec rm -f {} \;
 
     - name: Compile the firmware 1
-      id: compile
+      id: compile1
       run: |
         cd openwrt
         echo -e "$(nproc) thread compile"
@@ -107,7 +108,7 @@ jobs:
         $GITHUB_WORKSPACE/$DIY_P2_SH
 
     - name: Download package 2
-      id: package
+      id: package2
       run: |
         cd openwrt
         make defconfig
@@ -116,7 +117,7 @@ jobs:
         find dl -size -1024c -exec rm -f {} \;
 
     - name: Compile the firmware 2
-      id: compile
+      id: compile2
       run: |
         cd openwrt
         echo -e "$(nproc) thread compile"
