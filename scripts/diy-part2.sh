@@ -14,8 +14,8 @@
 sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
 
 # 修复核心及添加温度显示
-sed -i 's|pcdata(boardinfo.system or "?")|luci.sys.exec("uname -m") or "?"|g' feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
-sed -i 's/or "1"%>/or "1"%> ( <%=luci.sys.exec("expr `cat \/sys\/class\/thermal\/thermal_zone0\/temp` \/ 1000") or "?"%> \&#8451; ) /g' feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
+#sed -i 's|pcdata(boardinfo.system or "?")|luci.sys.exec("uname -m") or "?"|g' feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
+#sed -i 's/or "1"%>/or "1"%> ( <%=luci.sys.exec("expr `cat \/sys\/class\/thermal\/thermal_zone0\/temp` \/ 1000") or "?"%> \&#8451; ) /g' feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
 
 # Add luci-app-ssr-plus
 pushd package/lean
@@ -31,10 +31,10 @@ git clone --depth=1 https://github.com/Lienol/openwrt-package
 rm -rf ../lean/luci-app-kodexplorer
 
 # Add kenzok8 Packages
-git clone --depth=1 https://github.com/kenzok8/openwrt-package
+#git clone --depth=1 https://github.com/kenzok8/openwrt-package
 
 # Add kenzok8 small
-git clone --depth=1 https://github.com/kenzok8/small
+#git clone --depth=1 https://github.com/kenzok8/small
 
 # Add immortalwrt's Packages
 git clone --depth=1 -b openwrt-21.02 https://github.com/immortalwrt/packages
