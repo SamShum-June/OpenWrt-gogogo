@@ -21,10 +21,10 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/openwrt/openwrt
-  REPO_BRANCH: openwrt-21.02
-  #REPO_URL: https://github.com/coolsnowwolf/lede
-  #REPO_BRANCH: master
+  #REPO_URL: https://github.com/openwrt/openwrt
+  #REPO_BRANCH: openwrt-21.02
+  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: config/MIPS-COM/mi4-mips.config
   #CUSTOM_CONFIG: config/MIPS-COM/mi4-mips-extra.config
