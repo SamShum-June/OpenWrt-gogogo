@@ -23,8 +23,8 @@ env:
   REPO_URL: https://github.com/openwrt/openwrt
   REPO_BRANCH: openwrt-21.02
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: config/MIPS-COM/miwifi-mini.config
-  CUSTOM_CONFIG: config/MIPS-COM/miwifi-mini-extra.config
+  CONFIG_FILE: config/MIPS-COM/MIWIFI/miwifi-mini.config
+  CUSTOM_CONFIG: config/MIPS-COM/MIWIFI/miwifi-mini-extra.config
   DIY_P1_SH: scripts/diy-part1.sh
   DIY_P2_SH: scripts/diy-part2.sh
   UPLOAD_BIN_DIR: true
