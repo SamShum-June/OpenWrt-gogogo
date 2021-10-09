@@ -26,7 +26,7 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: config/MIPS-COM/mi4-mips.config
+  CONFIG_FILE: config/MIPS-COM/mir4_def.config
   #CUSTOM_CONFIG: config/MIPS-COM/mi4-mips-extra.config
   DIY_P1_SH: scripts/diy-part1.sh
   DIY_P2_SH: scripts/diy-part2.sh
