@@ -6,7 +6,7 @@
 #://github.com
 # https/P3TERX/Actions-OpenWrt
 # Description: Build OpenWrt using GitHub Actions
-#
+##
 
 #Build mi router 4 OpenWrt MIPS COM
 name: Build mir 4
