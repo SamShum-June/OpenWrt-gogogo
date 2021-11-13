@@ -6,7 +6,9 @@
 #://github.com
 # https/P3TERX/Actions-OpenWrt
 # Description: Build OpenWrt using GitHub Actions
-##
+#
+#
+#使用原有的coolsnowwolf/lede 设置，不额外添加其他插件#
 
 #Build mi router 4 OpenWrt MIPS COM
 name: Build mir 4 cf
@@ -21,13 +23,11 @@ on:
         default: 'false'
 
 env:
-  #REPO_URL: https://github.com/openwrt/openwrt
-  #REPO_BRANCH: openwrt-21.02
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: config/MIPS-COM/mir4.config
-  CUSTOM_CONFIG: config/MIPS-COM/mi4-mips-extra.config
+  CONFIG_FILE: config/MIPS-COM/mir 4 cf/mir 4 cf.config
+  #CUSTOM_CONFIG: config/MIPS-COM/mi4-mips-extra.config
   DIY_P1_SH: scripts/diy-part1.sh
   DIY_P2_SH: scripts/diy-part2.sh
   UPLOAD_BIN_DIR: true
@@ -75,14 +75,15 @@ jobs:
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
 
-    - name: Load custom configuration
-      run: |
-        [ -e files ] && mv files openwrt/files
-        [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
+    #- name: Load custom configuration
+      #run: |
+        #[ -e files ] && mv files openwrt/files
+        #[ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         #cat $CUSTOM_CONFIG >> openwrt/.config
-        chmod +x $DIY_P2_SH
-        cd openwrt
-        $GITHUB_WORKSPACE/$DIY_P2_SH
+        #chmod +x $DIY_P2_SH
+        #cd openwrt
+        #$GITHUB_WORKSPACE/$DIY_P2_SH
+
     - name: SSH connection to Actions
       uses: P3TERX/ssh2actions@v1.0.0
       if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
