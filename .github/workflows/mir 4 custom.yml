@@ -27,9 +27,9 @@ env:
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   ###小米路由器4基础设置###
-  CONFIG_FILE: config/MIPS-COM/mir 4 CUSTOM/mir 4 custom.config
+  CONFIG_FILE: config/MIPS-COM/mir-4-CUSTOM/mir-4-custom.config
   ###小米路由器4 附加插件设置###
-  CUSTOM_CONFIG: config/MIPS-COM/mir 4 CUSTOM/mi4 custom extra.config
+  CUSTOM_CONFIG: config/MIPS-COM/mir-4-CUSTOM/mir-4-custom-extra.config
   DIY_P1_SH: scripts/diy-part1.sh
   DIY_P2_SH: scripts/diy-part2.sh
   UPLOAD_BIN_DIR: true
