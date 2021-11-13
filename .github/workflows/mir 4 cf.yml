@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 #
-#使用原有的coolsnowwolf/lede 设置，不额外添加其他插件 #
+#使用原有的coolsnowwolf/lede 设置，不额外添加其他插件#
 
 #Build mi router 4 OpenWrt MIPS COM
 name: Build mir 4 cf
